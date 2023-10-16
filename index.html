@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student form</title>
+    <style>
+        button{
+            text-decoration:dashed;
+            border-radius: 30px;
+        }
+        button:hover{
+            background-color: blue;
+            
+        }
+        a:hover{
+            color: whitesmoke;
+        }
+        a{
+            padding: 5px;
+            text-decoration: none;
+        }
+        legend{
+            text-align: center;
+        }
+     
+    </style>
+</head>
+<body >
+    <center>
+    <h1 style="color: darkblue;">Student Registration Form</h1>
+    <link rel="stylesheet" href="style.css">
+    <form style="background-color:lightskyblue;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;border: 1px solid black ;width: 50%;text-align: left;">
+    <fieldset>
+
+        <legend>Personal Details</legend>
+        <label for="fn">First Name</label>
+        <input type="text" placeholder="Ex:Vinay" id="fn" name="fn" pattern="[a-zA-Z]{5,10}"> <br><br>
+
+        <label for="mn">Middle Name</label>
+        <input type="text" placeholder="EX:Sachin" id="mn" name="mn" pattern="[a-zA-Z]{5,10}"> <br><br>
+
+        <label for="ln">Last Name</label>
+        <input type="text" placeholder="Ex:Patil" id="ln" name="ln" pattern="[a-zA-Z]{5,10}"> <br><br>
+
+        <label for="">Gender</label><br><br>
+        <input type="radio" id="ml" name="Gender">
+        <label for="ml">male</label>
+        <input type="radio" id="fl" name="Gender">  
+        <label for="fl">female</label> <br><br>
+      
+        <label for="dl">DOB</label>
+        <input type="date" id="dl" name="dl"> <br><br>
+
+        <label for="cn">Contact number</label>
+        <input type="number" placeholder="Ex:8088080158" id="cn" name="cn" pattern="[6-9]{1}[0-9]{9}"> <br><br>
+
+        <label for="el">Email</label>
+        <input  type="email" placeholder="Ex:Vinay812@gmail.com" id="el" name="el"> <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Educational Details</legend>
+        
+        <label for="vn">USN</label>
+        <input type=" " placeholder="Ex:3PD17EE015" id="vn" name="vn"> <br><br>
+
+        <label for="">Department</label><br><br>
+        <input type="radio" id="ee" name="Department">
+        <label for="ee">EEE</label>
+        <input type="radio" id="cse" name="Department">  
+        <label for="cse">CSE</label> 
+        <input type="radio" id="ise" name="Department">  
+        <label for="ise">ISE</label> <br><br>
+
+        <label for="yop">YOP</label>
+        <input list="yog" id="yop" name="yop"> <br><br>
+        <datalist id="yog">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option> 
+            </datalist> <br> <br>
+            <label for="">Skills</label><br><br>
+            <input type="checkbox" id="ht" name="Skills">
+            <label for="ht">HTML</label>
+            <input type="checkbox"  id="cs" name="Skills">  
+            <label for="cs">CSS</label> 
+            <input type="checkbox"  id="js" name="Skills">  
+            <label for="js">Javascript</label> <br>
+       <button> <a href="https://www.siemens.com/in/en.html?gclid=CjwKCAjwvfmoBhAwEiwAG2tqzNqI_rywOlLneVcGk81-ewBo_I73S65g-11ky1K69fkF1MePsoHkThoCVMoQAvD_BwE&acz=1">Submit</a></button><br><br>
+    </fieldset>
+    </form>
+</center>
+</body>
+</html>
